@@ -1,0 +1,81 @@
+/* Start flavours */
+/*
+*
+* Base16 paradise
+* Author: Manas140
+*
+*/
+
+@define-color base00 #151515;
+@define-color base01 #1f1f1f;
+@define-color base02 #282828;
+@define-color base03 #3b3b3b;
+@define-color base04 #e8e3e3;
+@define-color base05 #e8e3e3;
+@define-color base06 #e8e3e3;
+@define-color base07 #e8e3e3;
+@define-color base08 #b66467;
+@define-color base09 #d9bc8c;
+@define-color base0A #d9bc8c;
+@define-color base0B #8c977d;
+@define-color base0C #8aa6a2;
+@define-color base0D #8da3b9;
+@define-color base0E #a988b0;
+@define-color base0F #d9bc8c;
+/* End flavours */
+
+* {
+    font-family: envypn;
+    font-size: 15px;
+    min-height: 0px;
+}
+
+window#waybar {
+    background: transparent;
+    color: @base07;
+}
+
+tooltip {
+    background: @base00;
+    border: 1px solid @base03;
+}
+tooltip label {
+    color: @base07;
+}
+
+#workspaces button {
+    padding: 2px 8px;
+    margin: 4px;
+    border-radius: 0;
+    border: 1px solid @base01;
+    background: @base00;
+}
+
+#workspaces button.focused {
+    color: @base0B;
+    border: 1px solid @base0B;
+}
+
+#clock, #battery, #network, #pulseaudio {
+    padding: 2px 8px;
+    background: @base00;
+    border-radius: 0;
+    border: 1px solid @base0D;
+    margin: 4px;
+}
+
+#battery.warning {
+    color: @base09;
+}
+
+#battery.critical {
+    color: @base08;
+}
+
+#mode {
+  padding: 2px 8px;
+  background: @base00;
+  border-radius: 0;
+  border: 1px solid @base0E;
+  margin: 4px;
+}

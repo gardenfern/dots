@@ -1,0 +1,39 @@
+set font "envypn 10"
+
+# Start flavours
+# Base16 paradise
+# Author: Manas140
+
+set default-bg                  "#151515"
+set default-fg                  "#1f1f1f"
+
+set statusbar-fg                "#e8e3e3"
+set statusbar-bg                "#282828"
+
+set inputbar-bg                 "#151515"
+set inputbar-fg                 "#e8e3e3"
+
+set notification-bg             "#151515"
+set notification-fg             "#e8e3e3"
+
+set notification-error-bg       "#151515"
+set notification-error-fg       "#b66467"
+
+set notification-warning-bg     "#151515"
+set notification-warning-fg     "#b66467"
+
+set highlight-color             "#d9bc8c"
+set highlight-active-color      "#8da3b9"
+
+set completion-bg               "#1f1f1f"
+set completion-fg               "#8da3b9"
+
+set completion-highlight-fg     "#e8e3e3"
+set completion-highlight-bg     "#8da3b9"
+
+set recolor-lightcolor          "#151515"
+set recolor-darkcolor           "#e8e3e3"
+
+set recolor                     "false"
+set recolor-keephue             "false"
+# End flavours

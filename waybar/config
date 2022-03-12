@@ -1,0 +1,50 @@
+
+{
+	"layer": "top",
+	"modules-left": ["sway/workspaces"],
+  "modules-center": ["sway/mode"],
+	"modules-right": ["network", "pulseaudio", "clock"],
+  
+	"sway/workspaces": { "format": "{icon}",
+		"format-icons": {
+			"1": "browser",
+			"2": "term",
+			"3": "work",
+			"4": "games",
+			"5": "media",
+			"6": "music",
+			"7": "chat",
+			"8": "downloads",
+			"9": "misc"
+		}
+	},
+
+	"network": {
+		"interface": "wlp3s0",
+		"format": "{icon} Home",
+    "format-icons": "wifi <span color=\"#8da3b9\">|</span>",
+    "tooltip": false
+	},
+	
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+    "format-icons": "vol <span color=\"#8da3b9\">|</span>",
+    "tooltip": false
+	},
+
+	"battery": {
+		"format": "{capacity}%",
+		"format-charging": "{capacity}%",
+		},
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+    "tooltip": false
+	},
+  
+	"clock": {
+		"format": "{:%H:%M}",
+		"tooltip-format": "{:%a, %d. %b}"
+	},
+}

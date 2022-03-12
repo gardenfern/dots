@@ -1,0 +1,60 @@
+[[item]]
+file = "~/.mozilla/firefox/gardenfern/chrome/userChrome.css"
+template = "firefox"
+rewrite = true
+
+[[item]]
+file = "~/.bin/menu"
+template = "fuzzel"
+rewrite = false
+
+[[item]]
+file = "~/.config/foot/foot.ini"
+template = "foot"
+rewrite = false
+
+[[item]]
+file = "~/.config/mako/config"
+template = "mako"
+rewrite = false
+hook = "makoctl reload"
+
+[[item]]
+file = "~/.config/nvim/colors/base16.vim"
+template = "vim"
+rewrite = true
+
+[[item]]
+file = "~/.config/sway/config"
+template = "sway"
+subtemplate = "colors"
+rewrite = false
+hook = "swaymsg reload"
+light = false
+
+[[item]]
+file = "~/.config/swaylock/config"
+template = "swaylock"
+rewrite = false
+
+[[item]]
+file = "~/.config/tmux/config"
+template = "tmux"
+rewrite = false
+
+[[item]]
+file = "~/.config/nvim/autoload/airline/themes/base16_paradise.vim"
+template = "vim-airline-themes"
+rewrite = true
+
+[[item]]
+file = "~/.config/waybar/style.css"
+template = "waybar"
+rewrite = false
+start = "/* Start flavours */"
+end = "/* End flavours */"
+
+[[item]]
+file = "~/.config/zathura/zathurarc"
+template = "zathura"
+rewrite = false

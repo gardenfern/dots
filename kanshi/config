@@ -1,0 +1,14 @@
+profile docked {
+	output eDP-1 disable
+	output "Goldstar Company Ltd E2211 110NDDM2S362" mode 1920x1080 position 0,0
+	output "Goldstar Company Ltd 22MB35 511NTEPA9620" mode 1920x1080 position 1920,0
+}
+
+profile builtin {
+	output eDP-1 enable
+}
+
+profile external_display {
+	output eDP-1 disable
+	output HDMI-A-1 scale 2 mode 1920x1080
+}

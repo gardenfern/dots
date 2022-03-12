@@ -1,0 +1,31 @@
+font=envypn
+text-alignment=center
+width=300
+height=300
+padding=20
+margin=20
+border-size=1
+output=DP-3
+
+default-timeout=10000
+
+# Start flavours
+## Base16 paradise
+# Author: Manas140
+#
+# You can use these variables anywhere in the mako configuration file.
+
+background-color=#151515
+text-color=#e8e3e3
+border-color=#8da3b9
+
+[urgency=low]
+background-color=#151515
+text-color=#d9bc8c
+border-color=#8da3b9
+
+[urgency=high]
+background-color=#151515
+text-color=#b66467
+border-color=#8da3b9
+# End flavours

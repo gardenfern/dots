@@ -1,0 +1,42 @@
+font=Noto Sans
+image=~/Pictures/Wallpapers/ferns2.jpg
+
+clock
+timestr=%H:%M
+datestr=%A %x
+
+indicator
+indicator-idle-visible
+indicator-radius=150
+indicator-thickness=20
+indicator-caps-lock
+
+# Start flavours
+## Base16 paradise
+## Author: Manas140
+
+text-color=#e8e3e3
+text-ver-color=#e8e3e3
+text-clear-color=#e8e3e3
+text-wrong-color=#e8e3e3
+
+key-hl-color=#e8e3e3
+bs-hl-color=#d9bc8c
+
+line-color=#1f1f1f
+line-ver-color=#1f1f1f
+line-clear-color=#1f1f1f
+line-wrong-color=#1f1f1f
+
+inside-color=#1f1f1f
+inside-ver-color=#1f1f1f
+inside-clear-color=#1f1f1f
+inside-wrong-color=#1f1f1f
+
+ring-color=#1f1f1f
+ring-ver-color=#8da3b9
+ring-clear-color=#d9bc8c
+ring-wrong-color=#b66467
+
+separator-color=#00000000
+# End flavours
