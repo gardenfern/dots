@@ -1,14 +1,10 @@
 font=Noto Sans
 image=~/Pictures/Wallpapers/ferns2.jpg
 
-clock
-timestr=%H:%M
-datestr=%A %x
+ignore-empty-password
 
-indicator
-indicator-idle-visible
-indicator-radius=150
-indicator-thickness=20
+indicator-radius=60
+indicator-thickness=15
 indicator-caps-lock
 
 # Start flavours

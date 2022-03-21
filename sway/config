@@ -18,8 +18,8 @@ set $play-pause "playerctl play-pause"
 set $next "playerctl next"
 set $prev "playerctl previous"
 
-set $lightup "light -A 5"
-set $lightdown "light -U 5"
+set $lightup "light -A 1"
+set $lightdown "light -U 1"
 
 ## Looks ##
 

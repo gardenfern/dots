@@ -3,7 +3,7 @@
 	"layer": "top",
 	"modules-left": ["sway/workspaces"],
   "modules-center": ["sway/mode"],
-	"modules-right": ["network", "pulseaudio", "clock"],
+	"modules-right": ["battery","network", "pulseaudio", "clock"],
   
 	"sway/workspaces": { "format": "{icon}",
 		"format-icons": {

@@ -18,9 +18,10 @@ source $ZSH/oh-my-zsh.sh
 ## Aliases
 
 # gentoo
-alias e='sudo emerge --ask --verbose'
-alias ec='sudo emerge --depclean'
-alias er='sudo emerge --deselect'
+alias ei='sudo emerge --ask --verbose'
+alias ec='sudo emerge --ask --verbose --depclean'
+alias er='sudo emerge --ask --verbose --deselect'
+alias es='sudo emaint sync -a'
 alias eu='sudo emerge --ask --verbose --update --deep --newuse @world'
 
 alias sus='loginctl suspend'
@@ -33,6 +34,7 @@ export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SO
 export NNN_BMS="c:$HOME/.config;m:/run/media/fern"
 export NNN_TRASH=1
 
+export TERM=xterm-256color
 export EDITOR=nvim
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/Screenshots"
 
