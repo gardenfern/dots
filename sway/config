@@ -10,16 +10,18 @@ set $right l
 set $term "foot"
 set $menu "~/.bin/menu"
 
-set $volup "pamixer -ui 1"
-set $voldown "pamixer -ud 1"
-set $volmute "pamixer --toggle-mute"
+set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
+exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $XDG_RUNTIME_DIR/wob.sock | wob -W 323 -H 20 -o 0 -b 1 -p 2 -a top -a right -M 12 --border-color '#8AA6A2FF' --background-color '#151515FF' --bar-color '#8AA6A2FF'
+set $volup "pamixer -ui 1 && pamixer --get-volume > $WOBSOCK"
+set $voldown "pamixer -ud 1 && pamixer --get-volume > $WOBSOCK"
+set $volmute "pamixer --toggle-mute && ( pamixer --get-mute && echo 0 > $WOBSOCK )  || pamixer --get-volume > $WOBSOCK"
 
 set $play-pause "playerctl play-pause"
 set $next "playerctl next"
 set $prev "playerctl previous"
 
-set $lightup "light -A 1"
-set $lightdown "light -U 1"
+set $lightup "light -A 5 && light -G | cut -d'.' -f1 > $WOBSOCK"
+set $lightdown "light -U 5 && light -G | cut -d'.' -f1 > $WOBSOCK"
 
 ## Looks ##
 
@@ -205,6 +207,7 @@ for_window [class="Steam"] move workspace 4
 # workspace 5 - media
 
 # workspace 6 - music
+for_window [class="Plexamp"] move workspace 6
 
 # workspace 7 - chat
 for_window [class="discord"] move workspace 7
@@ -219,7 +222,7 @@ assign [app_id="deluge"] 8
 # floats, positions, sizes
 for_window [app_id="mpv"] floating enable, move position center
 for_window [app_id="imv"] floating enable, move position center
-
+for_window [app_id="iwctl"] floating enable, move position center
 
 ## Bar ##
 bar {
@@ -236,4 +239,4 @@ exec "swayidle -w \
   timeout 300 'light -O; light -S 5' resume 'light -I' \
   timeout 600 'swaylock -f' \
   before-sleep 'playerctl -a pause; swaymsg output eDP-1 dpms on; swaylock -f'"
-exec pipewire
+exec gentoo-pipewire-launcher

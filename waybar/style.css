@@ -45,7 +45,7 @@ tooltip label {
 
 #workspaces button {
     padding: 2px 8px;
-    margin: 12px 4px 0px 12px;
+    margin: 12px 0px 0px 12px;
     border-radius: 0;
     border: 1px solid @base01;
     background: @base00;
@@ -61,7 +61,7 @@ tooltip label {
     background: @base00;
     border-radius: 0;
     border: 1px solid @base0D;
-    margin: 12px 12px 0 4px;
+    margin: 12px 12px 0px 0px;
 }
 
 #battery.warning {
@@ -77,5 +77,5 @@ tooltip label {
   background: @base00;
   border-radius: 0;
   border: 1px solid @base0E;
-  margin: 4px;
+  margin: 12px 0px 0px 0px;
 }

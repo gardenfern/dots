@@ -32,6 +32,7 @@ call plug#begin()
   Plug 'saadparwaiz1/cmp_luasnip'
   Plug 'L3MON4D3/LuaSnip'
   Plug 'vim-airline/vim-airline'
+  Plug 'junegunn/fzf'
 call plug#end()
 
 lua << EOF
@@ -136,6 +137,8 @@ cmp.setup {
   },
 }
 EOF
+
+nnoremap <silent> <C-f> :FZF ~<CR>
 
 let g:Hexokinase_highlighters = [ 'virtual' ]
 let g:Hexokinase_optInPatterns = 'full_hex,rgb,rgba,hsl,hsla,colour_names'

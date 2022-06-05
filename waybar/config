@@ -20,10 +20,11 @@
 	},
 
 	"network": {
-		"interface": "wlp3s0",
-		"format": "{icon} Home",
+		"interface": "wlan0",
+		"format": "{icon} {essid}",
     "format-icons": "wifi <span color=\"#8da3b9\">|</span>",
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "foot -a iwctl iwctl"
 	},
 	
 	"pulseaudio": {
@@ -45,6 +46,6 @@
   
 	"clock": {
 		"format": "{:%H:%M}",
-		"tooltip-format": "{:%a, %d. %b}"
+    "tooltip": false
 	},
 }
