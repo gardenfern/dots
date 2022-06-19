@@ -57,9 +57,9 @@ set $base0D #8da3b9
 set $base0E #a988b0
 set $base0F #d9bc8c
 # End flavours
-
-client.focused          $base05 $base0B $base00 $base0B $base0B
-client.focused_inactive $base01 $base01 $base05 $base03 $base01
+# Colors                border  bg      text    indi    childborder
+client.focused          $base0B $base00 $base05 $base0B $base0B
+client.focused_inactive $base01 $base01 $base05 $base01 $base01
 client.unfocused        $base01 $base00 $base05 $base01 $base01
 client.urgent           $base08 $base08 $base00 $base08 $base08
 
